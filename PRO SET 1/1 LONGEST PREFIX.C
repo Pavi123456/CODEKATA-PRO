@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include<string.h>
-int main(void) 
+int main() 
 {
 	int len1,len2,max=0,i;
-	char a[100],b[100];
-	printf("\nEnter the first string:  ");
-	scanf("%s",a);
-	printf("\nEnter the second string:  ");
-	scanf("%s",b);
-	len1=strlen(a);
-	len2=strlen(b);
+	char a1[100],b1[100];
+	
+	scanf("%s",a1);
+
+	scanf("%s",b1);
+	len1=strlen(a1);
+	len2=strlen(b1);
 	if(len1>len2)
 	{
 		max=len1;
@@ -20,9 +20,9 @@ int main(void)
 	}
 	for(i=0;i<max;i++)
 	{
-		if(a[i]==b[i])
+		if(a1[i]==b1[i])
 		{
-			printf("%c",a[i]);
+			printf("%c",a1[i]);
 		}
 		else
 		{
