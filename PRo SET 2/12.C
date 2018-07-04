@@ -2,7 +2,7 @@
 int main()
 {
 int num[30];
-int t,j,a,n;
+int t,j,arr,n;
 
 scanf("%d", &n);
 
@@ -14,9 +14,9 @@ for(j=t+1;j<n;++j)
 {
 if(num[t]<num[j])
 {
-a=num[t];
+arr=num[t];
 num[t]=num[j];
-num[j]=a;
+num[j]=arr;
 }
 }
 }
